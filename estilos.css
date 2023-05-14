@@ -1,0 +1,38 @@
+.navcolorgreen{
+    color:rgb(92, 231, 92);
+}
+.navcolorlightgreen{
+    color:lightgreen;
+}
+.navcolorwhite{
+    color:white;
+}
+.navcolorgrey{
+    color:grey;
+}
+.navcolorgrey:hover, .navcolorwhite:hover,  .navcolorgreen:hover, .navcolorlightgreen:hover, .navcolorgreen:hover{
+    color:white;
+}
+
+.navbackgrey{
+    background-color:rgb(56,56,56);
+}
+
+.bg-footer { 
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(132, 132, 134) 0%, rgb(103, 135, 141) 100%);
+    
+}
+.footerlinks { 
+    color:white;
+}
+.btn-enviar { 
+    background: rgb(59, 187, 59);
+    border: 0;
+    border-radius: 5px;
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btn-enviar:hover { 
+    background: rgb(47, 131, 47);
+    border-radius: 50px;
+}
