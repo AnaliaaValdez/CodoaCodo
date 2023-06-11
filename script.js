@@ -21,6 +21,31 @@ frmCompra.addEventListener("submit", function(event){
     let validCantidad=document.querySelector("#error-cantidad");
 
     
+    let expresionRemail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    let valido=true;         
+    if (nombre.value===""){
+        validNombre.textContent="Debe escribir un nombre";
+        valido=false;
+    }
+    if (apellido.value===""){
+        validApellido.textContent="Debe escribir un apellido";
+        valido=false;
+    }
+
+    if (!expresionRemail.test(email.value)){
+        validEmail.textContent="Debe escribir una dirección de correo válida";
+        valido=false;
+    }
+
+    if (isNaN(cantidad.value) && (!Number.isInteger(cantidad.value)) ){
+        validCantidad.textContent="Debe escribir un número entero";
+        valido=false;
+    }
+
+    if (cantidad.value===""){
+        validCantidad.textContent="Indique una cantidad";
+    }
 
     let totalPago;
     if (valido==true){
