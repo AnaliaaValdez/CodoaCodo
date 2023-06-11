@@ -14,7 +14,7 @@ frmCompra.addEventListener("submit", function(event){
     let email=document.querySelector("#inputMail");
     let cantidad=document.querySelector("#inputCantidad");
     let categoria=document.querySelector("#inputCategoria");
-    let importePagoTotal=document.querySelector("#importeTotal");
+    let importePagoTotal=document.querySelector("#importePagoTotal");
     let validNombre=document.querySelector("#error-nombre");
     let validApellido=document.querySelector("#error-apellido");
     let validEmail=document.querySelector("#error-email");
